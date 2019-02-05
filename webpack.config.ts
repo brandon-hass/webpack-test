@@ -1,7 +1,7 @@
+import * as HtmlWebpackPlugin from 'html-webpack-plugin';
 import * as path from 'path';
 import * as webpack from 'webpack';
 import * as webpackDevServer from 'webpack-dev-server';
-import * as HtmlWebpackPlugin from 'html-webpack-plugin';
 
 const config: webpack.Configuration & webpackDevServer.Configuration = {
   entry: './src/index.tsx',
@@ -28,6 +28,10 @@ const config: webpack.Configuration & webpackDevServer.Configuration = {
         enforce: 'pre',
         test: /\.js$/,
         loader: 'source-map-loader',
+      },
+      {
+        test: /\.less$/,
+        loader: 'less-loader',
       },
     ],
   },
