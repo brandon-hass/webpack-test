@@ -1,0 +1,37 @@
+{
+  "name": "webpack-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --mode development --hot --color",
+    "build": "webpack --mode production",
+    "lint": "tslint --project tsconfig.json src/components/**/*.ts{,x}",
+    "lint:fix": "tslint --fix --project tsconfig.json src/**/*.ts{,x}",
+    "prettier": "prettier --write src/**/*.ts{,x}"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/html-webpack-plugin": "^3.2.0",
+    "@types/node": "^10.5.5",
+    "@types/react": "^16.4.7",
+    "@types/react-dom": "^16.0.6",
+    "@types/webpack": "^4.4.8",
+    "@types/webpack-dev-server": "^2.9.5",
+    "awesome-typescript-loader": "^5.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "prettier": "^1.14.0",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "source-map-loader": "^0.2.3",
+    "ts-node": "^7.0.0",
+    "tslint": "^5.11.0",
+    "tslint-config-airbnb": "^5.9.2",
+    "tslint-config-prettier": "^1.14.0",
+    "typescript": "^3.0.1",
+    "webpack": "^4.16.3",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5"
+  }
+}
