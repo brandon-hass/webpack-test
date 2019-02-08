@@ -1,4 +1,6 @@
-import * as React from "react";
-import * as ReactDOM from "react-dom";
+import * as React from 'react';
+import * as ReactDOM from 'react-dom';
 
-ReactDOM.render(<div>Test</div>, document.getElementById("root"));
+import './styles/core.less';
+
+ReactDOM.render(<div className="error-container">Test</div>, document.getElementById('root'));
