@@ -9,7 +9,6 @@ const config: webpack.Configuration & webpackDevServer.Configuration = {
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
     port: 3000,
-    progress: true,
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.json'],
